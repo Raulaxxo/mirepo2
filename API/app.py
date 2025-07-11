@@ -11,6 +11,18 @@ def get_familia():
     return rows
 
 @app.get("/superheroesDC")
-def get_superheroes():
+def get_superheroesDC():
     rows = ["Superman", "Batman", "Flash", "Linterna Verde", "Mujer maravilla", "Aquaman", "Shazam", "Cyborg"]
     return rows
+
+
+@app.get("/superheroesMarvel")
+def get_superheroesMV():
+    rows = ["ironman", "capitan america", "thor", "hulk", "black widow", "spiderman", "antman", "doctor strange"]
+    return rows
+
+@app.get("/cursosPlatzi")
+def get_cursos():
+    rows = ["Docker", "Kubernetes", "Python", "FastAPI", "NodeJS", "ReactJS", "Angular", "VueJS"]
+    return rows
+
