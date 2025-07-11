@@ -26,3 +26,10 @@ def get_superheroesMV():
 def get_cursos():
     rows = ["Docker", "Kubernetes", "Python", "FastAPI", "NodeJS", "ReactJS", "Angular", "VueJS"]
     return rows
+
+
+@app.get("/marcasmoto")
+def get_marcasmoto():
+    rows = ["Honda", "Yamaha", "Suzuki", "Kawasaki", "Ducati", "BMW", "Harley-Davidson", "KTM"]
+    return rows
+
