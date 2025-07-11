@@ -28,7 +28,8 @@ def get_cursos():
     return rows
 
 
-@app.get("/mifamila")
-def get_mifamila():
-    rows = ["Mama", "Papa", "Hermana", "Hermano", "Tio", "Tia", "Primo", "Prima"]
+@app.get("/marcasmoto")
+def get_marcasmoto():
+    rows = ["Honda", "Yamaha", "Suzuki", "Kawasaki", "Ducati", "BMW", "Harley-Davidson", "KTM"]
     return rows
+
