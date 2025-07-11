@@ -9,6 +9,7 @@ app = FastAPI()
 def get_familia():
     rows = ["Amin", "Marce", "Miranda"]
     return rows
+    
 
 @app.get("/superheroesDC")
 def get_superheroesDC():
@@ -26,3 +27,8 @@ def get_cursos():
     rows = ["Docker", "Kubernetes", "Python", "FastAPI", "NodeJS", "ReactJS", "Angular", "VueJS"]
     return rows
 
+
+@app.get("/mifamila")
+def get_mifamila():
+    rows = ["Mama", "Papa", "Hermana", "Hermano", "Tio", "Tia", "Primo", "Prima"]
+    return rows
